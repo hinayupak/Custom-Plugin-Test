@@ -63,13 +63,13 @@ function custom_plugin_page() {
     <?php do_settings_sections( 'custom-plugin-settings' ); ?>
     <table class="form-table">
       <tr valign="top">
-      <th scope="row">Full name:</th>
+      <th scope="row">Full name:<br /><small>(No symbols and numbers allowed)</small></th>
       <td><input type="text" name="custom_plugin_full_name" pattern="[a-zA-Z][a-zA-Z\s]*" placeholder="Full name" value="<?php echo get_option('custom_plugin_full_name'); ?>" required/></td>
       </tr>
     </table>
   <?php submit_button(); ?>
   </form>
-  
+
 <?php
 }
 
